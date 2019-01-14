@@ -1,0 +1,1 @@
+docker run -d --name es2 -p 9200:9200 -p 9300:9300   -v /home/jason/elk/elasticsearch/es2/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml -v /var/local/es2/data:/usr/share/elasticsearch/data elasticsearch:6.5.1

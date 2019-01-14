@@ -1,0 +1,11 @@
+cluster.name: "wy-cluster"
+node.name: master
+network.host: 0.0.0.0
+network.publish_host: "172.18.154.132"
+node.master: true
+node.data: true
+http.cors.enable: true
+http.cors.allow-origin: "*"
+network.bind_host: 0.0.0.0
+discovery.zen.ping.unicast.hosts: ["172.18.154.132","172.18.154.131"]
+discovery.zen.minimum_master_nodes: 1
