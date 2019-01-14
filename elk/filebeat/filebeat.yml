@@ -1,9 +1,10 @@
-filebeat:
-  prospectors:
-    - input_type: log
-      paths:
-        - /home/www/cqb-dev/logs/*.*log*
-output:
-  logstash:
-  hosts: ["localhost:9299"]
-  index: cqb-dev-log
+filebeat.prospectors:
+- input_type: log
+  paths:
+    - /home/www/cqb-base-gz-be/logs/*cqb-transform*.*log*
+  include_lines: [".*出错.*",".*不存在.*"]
+  exclude_lines: [".*结果值为空.*"]
+  
+output.logstash:
+  hosts: ["47.106.193.243:9299"]
+  index: cqb-transform-log
