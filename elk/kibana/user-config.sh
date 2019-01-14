@@ -1,0 +1,1 @@
+docker run -p 5601:5601 -e "ELASTICSEARCH_URL=http://localhost:9200" --name weiyi-kibana --network host -d kibana:6.5.1

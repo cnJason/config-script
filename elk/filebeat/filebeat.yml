@@ -1,0 +1,9 @@
+filebeat:
+  prospectors:
+    - input_type: log
+      paths:
+        - /home/www/cqb-dev/logs/*.*log*
+output:
+  logstash:
+  hosts: ["localhost:9299"]
+  index: cqb-dev-log
