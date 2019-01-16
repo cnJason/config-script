@@ -2,8 +2,7 @@
 cd /usr/local/src/ 
 wget https://github.com/prometheus/node_exporter/releases/download/v0.17.0/node_exporter-0.17.0.linux-amd64.tar.gz
 
-# 部署
-tar -zxvf node_exporter-0.17.0.linux-amd64.tar.gz -C /usr/local/
+# 部
 cd /usr/local/
 mv node_exporter-0.17.0.linux-amd64/ node_exporter/
 

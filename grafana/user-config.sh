@@ -12,3 +12,5 @@ systemctl start grafana-server
 vi /etc/sysconfig/iptables
 -A INPUT -p tcp -m state --state NEW -m tcp --dport 3000 -j ACCEPT
 service iptables restart 
+
+# 默认用户名是 admin 密码是weiyidev
